@@ -13,6 +13,8 @@ namespace Calculator
             "a - Add",
             "s - Subtract",
             "m - Multiply",
+            "d - Divide",
+            "sabs - Subtract Abs"
              };
 
         public static void Add(double a, double b)
@@ -30,5 +32,14 @@ namespace Calculator
             Console.WriteLine( $"{a} - {b} = {a - b}");
         }
 
+        public static void Divide(double a, double b)
+        {
+            Console.WriteLine($"{a} : {b} = {a / b}");
+        }
+
+        public static void SubtrackAbs (double a, double b)
+        {
+            Console.WriteLine($"|{a} - {b}| = {Math.Abs(a - b)}");
+        }
     }
 }
