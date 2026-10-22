@@ -14,7 +14,9 @@ namespace Calculator
             "s - Subtract",
             "m - Multiply",
             "d - Divide",
-            "sabs - Subtract Abs"
+            "sabs - Subtract Abs",
+            "min - minimum"
+
              };
 
         public static void Add(double a, double b)
@@ -40,6 +42,12 @@ namespace Calculator
         public static void SubtrackAbs (double a, double b)
         {
             Console.WriteLine($"|{a} - {b}| = {Math.Abs(a - b)}");
+        }
+
+        public static void Mini (double a, double b)
+        {
+            double min = (a < b) ? a : b;
+            Console.WriteLine(min);
         }
     }
 }

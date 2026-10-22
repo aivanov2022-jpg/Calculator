@@ -47,6 +47,9 @@
                         case "sabs":
                         OptionsManager.SubtrackAbs(a, b);
                             break;
+                        case "min":
+                        OptionsManager.Mini(a, b);
+                            break;
                     }
                 }
                 catch (InvalidOperationException ex)
